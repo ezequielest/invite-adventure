@@ -193,6 +193,7 @@
 	
 	.numero15 {
 		font-size: 40px;
+		font-family: $special-font;
 	}
 
 	@media (min-width: 501px) {
@@ -264,7 +265,6 @@
 //--------- start about area  -------------//
 
 .info-area {
-
 	.name::after {
 		display: block;
 		height: 5px;
@@ -289,6 +289,7 @@
 
 
 	.info-content {
+		min-height: 330px;
 		box-shadow: 0px 0px 50px 0px rgba(157, 157, 157, 0.3);	
 		@include media-breakpoint-down(xs) {
 			margin-top: 30px;
@@ -417,11 +418,12 @@
 	.single-feature{
 		background-color:$offwhite;
 		padding:30px 30px 15px 30px;
+		min-height: 175px;
 		@include transition();
-		a{
+		a {
 			color:$black;
 		}
-		&:hover{
+		&:hover{ 
 			cursor:pointer;
 			@extend .p1-gradient-bg;
 			color:$white;
@@ -429,8 +431,8 @@
 				color:$white;
 			}
 		}
-		.title{
-			.lnr{
+		.title{ 
+			.lnr {
 				color:$black;
 				font-weight: 400;
 				margin-right: 12px;
@@ -438,64 +440,27 @@
 			}
 		}
 		img {
-			max-width: 300px;
-			padding: 20px 0; 
-		}
-		.elegante {
-			font-size: 45px;
-			margin-bottom: 20px;
-		}
-	}
-
-	.important-info {
-		margin-top: 20px;
-
-		.single-feature img {
-			max-width: 300px;
-			padding: 20px 0; 
-
-			.elegante {
-				font-size: 45px;
-				margin-bottom: 20px;
-			}
-		}
-		.title { 
-			margin-bottom: 30px;
-			display: block;
-		} 
-		p {
-			color: #ffbf29;
-			text-transform: uppercase;
-			font-size: 48px;
-			font-weight: bold;
-			font-size: 38px;
-			font-family: "Baloo Thambi", sans-serif;
+			max-width: 50px;
+			padding: 0; 
 		}
 		i {
-			font-size: 80px;
-			margin-right: 5px;
-			margin-left: 15px;
+			font-size: 40px;
+			margin: 0px 10px;
+			color: $black;
 		}
-		i.plane {
-			transform: rotate(-30deg);
-		}
-		span {
-			margin-top: 12px;
-			font-size: 25px;
-			display: inline-block;
-			&.destacado {
-				margin-top: 30px;
-				letter-spacing: 10px;
-				font-size: 38px;
-				display: block;
-			}
-		}
-		
 	}
 }
 
 
 //--------- end feature area  -------------//
+
+//--------- Start Map Area -------------//
+
+.map-container {
+	margin-bottom: 20px;
+}
+
+//--------- end Map area  -------------//
 
 //--------- Start gallery Area -------------//
 
@@ -601,9 +566,11 @@
     background: radial-gradient(circle at -18% 200%, #fdf497 0%, #fdf497 -7%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
     padding-top: 120px;
 	padding-bottom: 120px;
+	color: $white;
 
 	.hashtag {
 		font-size: 80px;
+		color: $white;
 	}
 }
 
@@ -672,31 +639,6 @@
 
 //--------- start contact  area // confirmation -------------//
 
-/*
-.single-contact-info{
-	text-align:center;
-	h6{
-		text-transform:uppercase;
-	}
-	@media(max-width:800px){
-		margin-bottom:30px;
-	}
-}
-
-.form-area{
-	input{
-		padding: 15px;		
-	}
-	input,textarea{
-		border-radius:0;
-		font-size:12px;
-	}
-	textarea{
-		height: 180px;
-		margin-top: 0px;
-	}
-}*/
-
 .confirmation {
     background: $primary-color;
 
@@ -719,6 +661,7 @@
 			background: var(--secondary-color);
 			border: 0;
 			color: #fff;
+			border: 1px solid $white;
 		}
 		
 	}

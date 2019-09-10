@@ -7,6 +7,12 @@ gulp.task('sass', function() {
     .pipe(gulp.dest('./css'))
 });
 
+function sass(){
+    return gulp.src('./scss/*.scss')
+    .pipe(sass())
+    .pipe(gulp.dest('./css'))
+}
+
 gulp.task('default', () => {
-    gulp.watch('./scss/*.scss',gulp.series('sass'))
+    gulp.watch('./scss/*.scss',gulp.series(sass))
 })
