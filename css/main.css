@@ -1914,6 +1914,12 @@ h4, h5, h6 {
   #instagram .hashtag {
     font-size: 80px;
     color: #fff; }
+    @media (max-width: 768px) {
+      #instagram .hashtag {
+        font-size: 40px; } }
+    @media (max-width: 320px) {
+      #instagram .hashtag {
+        font-size: 20px; } }
 
 .video-area {
   padding: 200px 0 60px 0;
@@ -1961,6 +1967,9 @@ h4, h5, h6 {
     .confirmation form h2 {
       margin-bottom: 20px;
       color: #fff; }
+      @media (max-width: 394px) {
+        .confirmation form h2 {
+          font-size: 15px; } }
     .confirmation form input {
       padding: 10px;
       width: 80%; }

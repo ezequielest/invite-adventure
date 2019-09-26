@@ -571,7 +571,17 @@
 	.hashtag {
 		font-size: 80px;
 		color: $white;
+
+		@media(max-width: 768px) {
+			font-size: 40px;
+		}
+
+		@media(max-width: 320px) {
+			font-size: 20px;
+		}
 	}
+
+	
 }
 
 //--------- End Insta area -------------//
@@ -648,6 +658,10 @@
 		h2 {
 			margin-bottom: 20px;
 			color: #fff;
+
+			@media(max-width: 394px) {
+				font-size: 15px;
+			}
 		}
 
 		input {
