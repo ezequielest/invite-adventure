@@ -35,7 +35,7 @@
 
 
 .primary-btn {
-	@extend .p1-gradient-bg;
+	@include grandient_trans(#b21aff, #732bde);
 	line-height: 42px;
 	padding-left: 30px;
 	padding-right: 60px;
@@ -90,7 +90,7 @@
 	padding: 5px 30px;
 	border-radius: 20px;	
 	&:hover{
-		@extend .p1-gradient-bg;
+		@include grandient_trans(#b21aff, #732bde);
 		color:#fff;
 	}
 }
@@ -209,7 +209,6 @@
 	}
 
 	h1{
-		color:$black;
 		font-size: 72px;
 		font-weight: 700;
 		line-height: 1em;
@@ -425,7 +424,7 @@
 		}
 		&:hover{ 
 			cursor:pointer;
-			@extend .p1-gradient-bg;
+			@include grandient_trans(#b21aff, #732bde);
 			color:$white;
 			a,.title .lnr{
 				color:$white;
@@ -508,7 +507,7 @@
 	h2{	
 		font-size: 48px;
 		font-weight:700;
-		@extend .p1-gradient-color;
+		@include grandient_trans(#b21aff, #732bde);
 	}
 	p{
 		font-size:14px;
@@ -595,7 +594,7 @@
 	background: url(../img/video-bg.jpg) no-repeat;
     background-size: cover;
 	.overlay-bg {
-		@extend .p1-gradient-bg;
+		@include grandient_trans(#b21aff, #732bde);
 		opacity:.6;
 	}
 	.video-content {
@@ -605,7 +604,12 @@
 		a {
 			display: inline-block;
 			margin-bottom: 20px;
-		}
+
+			@media (max-width: 500px ) {
+				top: 90px;
+				position: relative;
+			}
+ 		}
 		h3{
 			font-weight:600;
 			font-size:18px;
@@ -711,7 +715,7 @@
 			&:hover{
 			
 				i{
-						@extend .p1-gradient-color;
+					@include grandient_trans(#b21aff, #732bde);
 				}
 			}
 		}
@@ -745,7 +749,7 @@
 
 
 		.bb-btn{
-			@extend .p1-gradient-color;
+			@include grandient_trans(#b21aff, #732bde);
 			color:#fff;
 			font-weight:300;
 			border-radius:0;
@@ -770,7 +774,7 @@
 		}
 
 		.click-btn{
-			@extend .p1-gradient-bg;
+			@include grandient_trans(#b21aff, #732bde);
 			color: #fff;
 			border-radius: 0;
 			border-top-left-radius: 0px;
@@ -842,7 +846,7 @@
 
 
 .generic-banner {
-	@extend .p1-gradient-bg;
+	@include grandient_trans(#b21aff, #732bde);
 	text-align:center;
 	.height {
 		height: 600px;

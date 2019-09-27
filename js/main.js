@@ -27,13 +27,11 @@ $(document).ready(function(){
         }
     });
 
-  // $('.navbar-nav>li>a').on('click', function(){
-  //     $('.navbar-collapse').collapse('hide');
-  // });
-
+    // $('.navbar-nav>li>a').on('click', function(){
+    //     $('.navbar-collapse').collapse('hide');
+    // });
 
     //  Counter Js 
-
     $('.counter').counterUp({
         delay: 10,
         time: 1000
