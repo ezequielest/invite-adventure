@@ -2516,7 +2516,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
-.feature-area .single-feature:hover a, .feature-area .single-feature:hover .title .lnr {
+.feature-area .single-feature:hover a, .feature-area .single-feature:hover .title .lnr, .feature-area .single-feature:hover i {
   color: #fff;
 }
 
@@ -2787,8 +2787,7 @@ h6 {
 }
 
 .footer-social a:hover i {
-  background: -webkit-gradient(linear, left top, left bottom, from(#b21aff), to(#732bde));
-  background: linear-gradient(#b21aff, #732bde);
+  color: #b21aff;
 }
 
 .footer-social i {

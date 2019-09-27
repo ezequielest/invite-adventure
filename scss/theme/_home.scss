@@ -426,7 +426,7 @@
 			cursor:pointer;
 			@include grandient_trans(#b21aff, #732bde);
 			color:$white;
-			a,.title .lnr{
+			a,.title .lnr, i{
 				color:$white;
 			}
 		}
@@ -709,13 +709,13 @@
 	}
 
 	.footer-social{
-		a{
+		a {
 			padding-right:25px;
 			@include transition();
-			&:hover{
+			&:hover {
 			
-				i{
-					@include grandient_trans(#b21aff, #732bde);
+				i {
+					color: #b21aff;
 				}
 			}
 		}
