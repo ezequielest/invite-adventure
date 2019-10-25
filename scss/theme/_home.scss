@@ -261,9 +261,28 @@
 
 //--------- End Banner Area -------------//
 
+//--------- Slider Area ----------//
+#slider {
+	.save-the-date {
+		text-transform: lowercase;
+	}
+	.carousel-title {
+		letter-spacing: 5px;
+	}
+	.carousel-subtitle {
+		font-family: $special-font;
+		font-size: 40px;
+	}
+}
+
 //--------- start about area  -------------//
 
 .info-area {
+
+	.fecha.title {
+		font-family: $special-font;
+	}
+
 	.name::after {
 		display: block;
 		height: 5px;
